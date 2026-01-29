@@ -182,7 +182,7 @@ p {
 }
 
 .nav-button {
-    background-color: var(--dark-navy);
+    background-color: var(--primary-blue);
     color: var(--white);
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
@@ -190,7 +190,7 @@ p {
 }
 
 .nav-button:hover {
-    background-color: var(--primary-blue);
+    background-color: var(--dark-navy);
 }
 
 /* Hero Section */
@@ -454,14 +454,16 @@ p {
         flex-direction: column;
     }
 }
+
 /* --- Animations --- */
 
 /* Base Transitions */
-.hero-content, 
-.hero-image-wrapper, 
+.hero-content,
+.hero-image-wrapper,
 .contact-ribbon,
 .header {
-    opacity: 0; /* Start hidden for JS to trigger */
+    opacity: 0;
+    /* Start hidden for JS to trigger */
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -476,7 +478,8 @@ p {
 }
 
 /* Initial States for animations */
-.hero-content, .hero-image-wrapper {
+.hero-content,
+.hero-image-wrapper {
     transform: translateY(30px);
 }
 
@@ -494,7 +497,8 @@ p {
 
 /* Card Hover Effects - Refinement */
 .service-card:hover {
-    transform: translateY(-8px) scale(1.02); /* Slight scale up + lift */
+    transform: translateY(-8px) scale(1.02);
+    /* Slight scale up + lift */
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
@@ -510,4 +514,3 @@ p {
 .nav-link {
     transition: color 0.2s ease;
 }
-
